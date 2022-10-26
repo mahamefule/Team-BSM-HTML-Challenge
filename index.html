@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>This is our own work</h1>
-</body>
+  </body>
+  <section id="Survey Page">
+    <header><h2>Take a second to review!</h2></header>
+    <p>
+      This Survey is to test your knowdledge! answer the questions below and
+      submit them!
+    </p>
+    <br />
+    <form action="results.html" method="GET">
+      <label for="question-1">is a growth mindset positive or negative</label
+      ><br />
+      <input
+        id="question-1"
+        name="question-1"
+        type="text"
+        required
+        minlength="0"
+        maxlength="8"
+      /><br />
+      <label for="question-2">What can you do if</label><br />
+      <input
+        id="question-2"
+        name="question-2"
+        type="text"
+        required
+        minlength="0"
+        maxlength="10"
+      /><br />
+      <label for="question-3">What does proactiveness mean to you?</label><br />
+      <input
+        id="question-3"
+        name="question-3"
+        type="text"
+        required
+        minlength="0"
+        maxlength="10"
+      /><br />
+      <label for="rating">What do you rate your growth mindset level?</label
+      ><br />
+      1-5<br />
+      <input
+        id="rating"
+        name="rating-review"
+        type="range"
+        min="0"
+        max="5"
+        step="1"
+      />
+      <br />
+      Gender:<br />
+      <input id="gender" name="gender" type="radio" value="male" required />Male
+      <input
+        id="gender"
+        name="gender"
+        type="radio"
+        value="female"
+        required
+      />Female
+      <label for="age">Age</label>
+      <input id="age" name="age" type="number" min="0" max="100" />
+
+      <br />
+      <label for="submit">Submit when you are done!</label><br />
+      <input id="submit" name="submit" type="submit" />
+    </form>
+  </section>
 </html>
